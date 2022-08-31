@@ -6,11 +6,11 @@ productContainers.forEach((item, i) => {
   let containerDimenstions = item.getBoundingClientRect();
   let containerWidth = containerDimenstions.width;
 
-nxtBtn[i].addEventListener('click', () => {
+nxtBtn[i].addEventListener(click, () => {
   item.scrollleft += containerWidth;
 })
 
-preBtn[i].addEventListener('click', () => {
+preBtn[i].addEventListener(click, () => {
   item.scrollleft -= containerWidth;
 })
 
